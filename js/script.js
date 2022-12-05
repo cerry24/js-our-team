@@ -31,6 +31,17 @@ const members = [
     },
 ];
 
+
+const nameElement = document.getElementById('name');
+const roleElement = document.getElementById('role');
+const photoElement = document.getElementById('img');
+
 for ( let i = 0; i < members.length; i++ ) {
     console.log(members[i]);
+
+    nameElement.innerHTML += `Membro ${i + 1}: ${members[i].name} <br>`;
+
+    roleElement.innerHTML += `${members[i].role} <br>`;
+
+    photoElement.innerHTML += `${members[i].photo} <br>`;
 }
