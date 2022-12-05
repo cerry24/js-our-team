@@ -30,3 +30,7 @@ const members = [
         photo : 'barbara-ramos-graphic-designer.jpg'
     },
 ];
+
+for ( let i = 0; i < members.length; i++ ) {
+    console.log(members[i]);
+}
